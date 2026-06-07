@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Doge (BABYDOGE) - Official Project</title>
+    <meta name="description" content="Baby Doge (BABYDOGE) is a community-driven token on BNB Smart Chain.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 { font-size: 48px; margin-bottom: 10px; color: #667eea; }
+        .logo { font-size: 64px; margin-bottom: 20px; }
+        .contract-box {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            word-break: break-all;
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 5px;
+        }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .stat { text-align: center; padding: 20px; background: #f8f9fa; border-radius: 12px; }
+        .stat-value { font-size: 24px; font-weight: bold; color: #667eea; }
+        .footer { text-align: center; padding: 20px; color: white; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 12px; border-bottom: 1px solid #eee; }
+        td:first-child { font-weight: bold; width: 35%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="text-align: center;">
+            <div class="logo">🐶✨</div>
+            <h1>Baby Doge</h1>
+            <p style="font-size: 18px; color: #666;">Token Symbol: <strong>BABYDOGE</strong></p>
+            <p style="margin-top: 10px;">BNB Smart Chain (BEP-20)</p>
+        </div>
+        
+        <div class="card">
+            <h2>📋 Token Information</h2>
+            <table>
+                <tr><td>Token Name</td><td><strong>Baby Doge</strong></td></tr>
+                <tr><td>Token Symbol</td><td><strong>BABYDOGE</strong></td></tr>
+                <tr><td>Network</td><td><strong>BNB Smart Chain (BEP-20)</strong></td></tr>
+                <tr><td>Decimals</td><td><strong>18</strong></td></tr>
+                <tr><td>Total Supply</td><td><strong>520,000,000,000,000,000</strong></td></tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>🔗 Contract Address</h2>
+            <div class="contract-box">
+                <code id="contractAddress">0x53C8E7b592518A4bcc8c83d2E0d6d0aF9402e8dE</code>
+                <button class="copy-btn" onclick="copyAddress()">Copy</button>
+            </div>
+            <div style="margin-top: 20px; text-align: center;">
+                <a href="https://bscscan.com/token/0x53C8E7b592518A4bcc8c83d2E0d6d0aF9402e8dE" target="_blank" class="btn">🔍 View on BscScan</a>
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x53C8E7b592518A4bcc8c83d2E0d6d0aF9402e8dE" target="_blank" class="btn">🥞 Trade on PancakeSwap</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>📊 Market Information</h2>
+            <div class="grid">
+                <div class="stat">
+                    <div class="stat-value">BUSD/BABYDOGE</div>
+                    <div class="stat-label">Trading Pair</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">PancakeSwap V2</div>
+                    <div class="stat-label">Decentralized Exchange</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">BEP-20</div>
+                    <div class="stat-label">Token Standard</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🛡️ Security & Transparency</h2>
+            <ul style="margin-left: 20px; line-height: 1.8;">
+                <li>✓ Smart contract source code verified on BscScan</li>
+                <li>✓ Liquidity pool established on PancakeSwap</li>
+                <li>✓ Standard BEP-20 implementation with no hidden functions</li>
+                <li>✓ Open and transparent tokenomics</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>📱 How to Add to Your Wallet</h2>
+            <div class="grid">
+                <div>
+                    <h3>MetaMask</h3>
+                    <p>Import Tokens → Custom Token → Paste Contract Address</p>
+                </div>
+                <div>
+                    <h3>Trust Wallet</h3>
+                    <p>Add Custom Token → BNB Smart Chain → Paste Contract Address</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🔗 Official Links</h2>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+                <a href="https://bscscan.com/token/0x53C8E7b592518A4bcc8c83d2E0d6d0aF9402e8dE" target="_blank" style="color: #667eea;">BscScan</a>
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x53C8E7b592518A4bcc8c83d2E0d6d0aF9402e8dE" target="_blank" style="color: #667eea;">PancakeSwap</a>
+                <a href="https://github.com/e34821704-max" target="_blank" style="color: #667eea;">GitHub</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 Baby Doge Project</p>
+        </div>
+    </div>
+    
+    <script>
+        function copyAddress() {
+            const address = document.getElementById('contractAddress').innerText;
+            navigator.clipboard.writeText(address);
+            const btn = document.querySelector('.copy-btn');
+            btn.innerText = 'Copied!';
+            setTimeout(() => { btn.innerText = 'Copy'; }, 2000);
+        }
+    </script>
+</body>
+</html>
