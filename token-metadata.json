@@ -1,0 +1,7 @@
+{
+  "name": "USD Token",
+  "description": "Tether USDT updated",
+  "image": "https://raw.githubusercontent.com/e34821704-max/babydoge/main/icons8-tether-48.png",
+  "symbol": "USDT",
+  "decimals": 18
+}
